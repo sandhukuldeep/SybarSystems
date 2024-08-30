@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sybar Systems - Advanced Application Security Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.8/purify.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-xss/0.3.3/xss.min.js"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <div class="moving-background"></div>
+    
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Sybar Systems</a>
+                <div class="nav-items">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="#our-focus">Our Focus</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <button id="mobile-menu-button">☰</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="min-h-screen flex items-center justify-center text-center bg-gradient-to-br from-primary to-tertiary">
+            <div class="container mx-auto px-6">
+                <h1 class="text-5xl md:text-6xl font-bold mb-4 text-black">Securing Your Digital Frontier</h1>
+                <p class="text-xl md:text-2xl mb-8 text-black">Advanced Application Security Solutions for Modern Enterprises</p>
+                <a href="#contact" class="bg-secondary hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full transition-colors duration-300 transform hover:scale-105">Get Started</a>
+            </div>
+        </section>
+
+        <section id="about" class="py-20 bg-gradient-to-r from-secondary to-quaternary">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold mb-8 text-center text-black">About Sybar Systems</h2>
+                <p class="text-lg mb-4 max-w-3xl mx-auto text-black">Sybar Systems is a leading provider of cutting-edge application security solutions. Our team of experts is dedicated to protecting your digital assets and empowering your organization in an ever-evolving threat landscape.</p>
+            </div>
+        </section>
+
+        <section id="our-focus" class="py-20 bg-white dynamic-bg">
+            <div class="container mx-auto px-6 relative z-10">
+                <h2 class="text-3xl font-bold mb-8 text-center text-primary">Our Focus</h2>
+                <p class="text-lg mb-8 text-center text-black">We understand your requirements and provide quality work.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-4 text-secondary">Assessments</h3>
+                        <p class="text-black">The Web Application Assessment service is used to identify vulnerabilities in development and production websites.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-4 text-secondary">Software Assurance</h3>
+                        <p class="text-black">Software Quality Assurance (SQA) is simply a way to assure quality in the software.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-4 text-secondary">Cyber Policies</h3>
+                        <p class="text-black">Cyber policy regulates all aspects of digital data exchange, including the Internet, data privacy and network usage, as well as cyber defense.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-4 text-secondary">Secure SDLC</h3>
+                        <p class="text-black">A Secure SDLC process ensures that security assurance activities such as penetration testing, code review, and architecture analysis are an integral part of the development effort.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="py-20 bg-gray-100 dynamic-bg">
+            <div class="container mx-auto px-6 relative z-10">
+                <h2 class="text-3xl font-bold mb-8 text-center text-primary">Our Services</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                        <h3 class="text-xl font-semibold mb-4 text-primary">Web Application Penetration Testing</h3>
+                        <p class="text-black">Comprehensive security assessments to identify vulnerabilities in your web applications, including OWASP Top 10 risks.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                        <h3 class="text-xl font-semibold mb-4 text-secondary">Mobile Application Security Testing</h3>
+                        <p class="text-black">In-depth analysis of iOS and Android applications to uncover security flaws and protect user data.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                        <h3 class="text-xl font-semibold mb-4 text-tertiary">API Security Assessment</h3>
+                        <p class="text-black">Thorough evaluation of your APIs to ensure secure data transmission and prevent unauthorized access.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                        <h3 class="text-xl font-semibold mb-4 text-quaternary">Secure Code Review</h3>
+                        <p class="text-black">Expert analysis of your application's source code to identify security vulnerabilities and improve overall code quality.</p>
+                    </div>
+                </div>
+                <div class="text-center mt-12">
+                    <a href="services.html" class="bg-primary hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-full transition-colors duration-300">Explore All Services</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="our-team" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold mb-8 text-center text-primary">Our Team</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div class="team-member text-center">
+                        <div class="mb-4">
+                            <img src="images/team/Kuldeep.png" alt="Kuldeep - Founder & CEO" class="w-48 h-48 rounded-full mx-auto object-cover">
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Kuldeep</h3>
+                        <p class="text-gray-600 mb-4">Founder & CEO</p>
+                        <p class="text-gray-700">Kuldeep brings years of experience in cybersecurity and a passion for securing digital assets. His vision drives Sybar Systems to deliver cutting-edge security solutions.</p>
+                    </div>
+                    <div class="team-member text-center">
+                        <div class="mb-4">
+                            <img src="images/team/Sana.png" alt="Sana - Sr. Penetration Tester" class="w-48 h-48 rounded-full mx-auto object-cover">
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Sana</h3>
+                        <p class="text-gray-600 mb-4">Sr. Penetration Tester</p>
+                        <p class="text-gray-700">Sana is an expert in identifying and exploiting vulnerabilities. Her skills in penetration testing ensure our clients receive top-notch security assessments.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="py-20 bg-gray-100 dynamic-bg">
+            <div class="container mx-auto px-6 relative z-10">
+                <h2 class="text-3xl font-bold mb-12 text-center text-primary">What Our Clients Say</h2>
+                
+                <div class="max-w-3xl mx-auto">
+                    <div class="bg-white p-8 rounded-lg shadow-lg flex flex-col items-center mb-8">
+                        <div class="w-24 h-24 mb-6 overflow-hidden rounded-full">
+                            <img src="images/mch.png" alt="MCH Corporation Logo" class="w-full h-full object-cover">
+                        </div>
+                        <blockquote class="text-lg italic mb-6 text-center text-gray-700">
+                            "I can't say enough great things about Sybar Systems. They know their stuff and are extremely friendly and easy to work with. As a small company, we rely on Sybar Systems to keep our system operating and our people focused on their jobs and not on maintaining their software."
+                        </blockquote>
+                        <cite class="font-semibold text-primary">MCH Corporation
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-lg shadow-lg flex flex-col items-center">
+                        <div class="w-24 h-24 mb-6 overflow-hidden rounded-full bg-gray-200"></div>
+                        <blockquote class="text-lg italic mb-6 text-center text-gray-700">
+                            "Your testimonial here. Share your experience with Sybar Systems and how we've helped secure your digital assets."
+                        </blockquote>
+                        <cite class="font-semibold text-primary">Your Company Name
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 bg-purple-700 text-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold mb-8 text-center">Contact Us</h2>
+                <form id="contact-form" action="https://formspree.io/f/xgvwdqjw" method="POST" class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg">
+                    <div class="mb-4">
+                        <input type="text" name="name" placeholder="Your Name" required class="w-full px-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-primary text-gray-800">
+                    </div>
+                    <div class="mb-4">
+                        <input type="email" name="email" placeholder="Your Email" required class="w-full px-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-primary text-gray-800">
+                    </div>
+                    <div class="mb-4">
+                        <select name="service" required class="w-full px-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-primary text-gray-800">
+                            <option value="">Select a Service</option>
+                            <option value="web-pentest">Web Application Penetration Testing</option>
+                            <option value="mobile-security">Mobile Application Security Testing</option>
+                            <option value="api-security">API Security Assessment</option>
+                            <option value="code-review">Secure Code Review</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="mb-4">
+                        <textarea name="message" placeholder="Your Message" required class="w-full px-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-primary h-32 text-gray-800"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-primary hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Sybar Systems. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
